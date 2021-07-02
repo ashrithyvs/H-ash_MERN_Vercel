@@ -98,7 +98,7 @@ function App() {
           <Route path="/skills">
             <SkillsList />
           </Route>
-          <Route path="/projects">
+          <Route path="/projectlist">
             <ProjectList />
           </Route>
           <Route path="/adminLogin">
