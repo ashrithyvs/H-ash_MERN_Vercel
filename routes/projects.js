@@ -43,7 +43,7 @@ router.route("/add").post(upload.single("photo"), (req, res) => {
     .then(() => res.json("Project Added"))
     .catch((err) => res.status(400).json("Error: " + err));
 });
-router.route("/getProjects").get((req, res) => {
+router.route("/get").get((req, res) => {
   Project.find((error, data) => {
     if (error) {
       return next(error);
