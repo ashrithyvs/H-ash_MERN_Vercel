@@ -1,7 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const { ATLAS_URI } = require("./config/keys");
 
 const app = express();
 require("dotenv").config();
@@ -13,7 +12,8 @@ app.use(express.json());
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(ATLAS_URI, {
+const uri = process.env.ATLAS_URI;
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
