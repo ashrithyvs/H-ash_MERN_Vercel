@@ -65,7 +65,7 @@ function App() {
                   Skills
                 </Button>
               </Link>
-              <Link to="/projects">
+              <Link to="/projectlist">
                 <Button
                   className="mx-2"
                   variant="outline-light"
