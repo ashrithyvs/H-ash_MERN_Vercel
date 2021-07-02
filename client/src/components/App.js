@@ -65,7 +65,7 @@ function App() {
                   Skills
                 </Button>
               </Link>
-              <Link to="/projectlist">
+              <Link to="/projects">
                 <Button
                   className="mx-2"
                   variant="outline-light"
@@ -98,7 +98,7 @@ function App() {
           <Route path="/skills">
             <SkillsList />
           </Route>
-          <Route path="/projectlist">
+          <Route path="/projects">
             <ProjectList />
           </Route>
           <Route path="/adminLogin">
