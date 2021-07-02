@@ -4,7 +4,7 @@
 
 1. Run the following command to install node modules for client and server.
 
-`n`npm install`
+`npm install`
 &
 `cd client && npm install`
 
