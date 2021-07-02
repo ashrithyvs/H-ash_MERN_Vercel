@@ -49,6 +49,7 @@ function App() {
             <Nav className="col-md-12 justify-content-end">
               <Link to="/about">
                 <Button
+                  id="about"
                   className="mx-2"
                   variant="outline-light"
                   style={{ border: "0px" }}
@@ -65,7 +66,7 @@ function App() {
                   Skills
                 </Button>
               </Link>
-              <Link to="/projects">
+              <Link to="/projectslist">
                 <Button
                   className="mx-2"
                   variant="outline-light"
@@ -98,7 +99,7 @@ function App() {
           <Route path="/skills">
             <SkillsList />
           </Route>
-          <Route path="/projects">
+          <Route path="/projectslist">
             <ProjectList />
           </Route>
           <Route path="/adminLogin">
