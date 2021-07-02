@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const { ATLAS_URI } = require("./config/keys");
 
 const app = express();
 require("dotenv").config();
@@ -12,8 +13,7 @@ app.use(express.json());
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
-const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, {
+mongoose.connect(ATLAS_URI, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
@@ -30,6 +30,15 @@ const adminRouter = require("./routes/admin");
 app.use("/projects", projectRouter);
 app.use("/skills", userRouter);
 app.use("/admin", adminRouter);
+
+if (process.env.NODE_ENV == "production") {
+  const path = require("path");
+
+  app.get("/", (req, res) => {
+    app.use(express.static(path.resolve(__dirname, "client", "build")));
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);
