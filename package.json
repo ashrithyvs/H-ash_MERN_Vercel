@@ -1,22 +1,27 @@
 {
   "name": "h-ash_mern",
   "version": "1.0.0",
-  "description": "Ashrith Yakkali's Portfolio built using MERN stack and deployed to Netlify",
-  "main": "index.js",
+  "description": "Ashrith Yakkali's Portfolio built using MERN stack",
+  "main": "app.js",
   "engine": {
     "node": "14.17.2",
     "npm": "6.14.13"
   },
   "scripts": {
-    "server": "cd backend && npm i && node app.js",
-    "client": "cd frontend && npm start",
-    "build": "cd frontend && npm run build"
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "cd client && npm install && npm start",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "n"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0",
+    "multer": "^1.4.2",
+    "uuid": "^8.3.2"
   },
-  "author": "Ashrith Yakkali",
-  "license": "ISC",
-  "dependencies": {}
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
 }
