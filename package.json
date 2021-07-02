@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "server": "nodemon app.js",
-    "client": "cd client && npm install && npm start",
+    "client": "cd client && npm start",
     "build": "cd client && npm install && npm run build"
   },
   "dependencies": {

@@ -10,7 +10,7 @@ export default class ProjectList extends Component {
   }
   componentDidMount() {
     axios
-      .get(`http://localhost:5000/projects`)
+      .get(`/projects`)
       .then((res) => {
         this.setState({ projectData: res.data });
       })
