@@ -2,11 +2,12 @@ import { Button, Container } from "react-bootstrap";
 
 function Intro() {
   return (
-    <section className="Intro" id="home" style={{ minHeight: "90vh" }}>
-      <Container
-        className="text-center text-light"
-        style={{ paddingTop: "15%" }}
-      >
+    <Container
+      className="Intro d-flex align-items-center justify-content-center"
+      id="intro"
+      style={{ minHeight: "90vh" }}
+    >
+      <div className="text-center text-light">
         <span className="lead">Hey! I'm</span>
         <h1 className="intro-heading">Ashrith Yakkali</h1>
         <Button
@@ -17,8 +18,8 @@ function Intro() {
         >
           Want to know me?
         </Button>
-      </Container>
-    </section>
+      </div>
+    </Container>
   );
 }
 

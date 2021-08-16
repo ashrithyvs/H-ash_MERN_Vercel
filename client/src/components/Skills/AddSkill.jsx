@@ -17,7 +17,7 @@ const AddSkill = () => {
     e.preventDefault();
     e.stopPropagation();
     axios
-      .post("http://localhost:5000/skills/addSkill/", newSkill)
+      .post("https://h-ash-server.herokuapp.com/skills/addSkill/", newSkill)
       .then((res) => {
         console.log("Skill Added to DB Successfully");
         setShow(true);

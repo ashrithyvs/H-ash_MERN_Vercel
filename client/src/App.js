@@ -1,17 +1,18 @@
 import React from "react";
-import Footer from "./footer";
-import Contact from "./contact.jsx";
-import About from "./about";
-import "./App.css";
-import LoginPage from "./LoginPage";
-import HomeWrapper from "./HomeWrapper";
 import { NavbarBrand, Navbar, Nav, Button } from "react-bootstrap";
 import NavbarToggle from "react-bootstrap/NavbarToggle";
 import NavbarCollapse from "react-bootstrap/NavbarCollapse";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Education from "./education";
-import SkillsList from "./skillsList";
-import ProjectList from "./ProjectList";
+
+import Footer from "./components/Footer/footer";
+import Contact from "./components/Contact/contact.jsx";
+import About from "./components/About/about";
+import HomeWrapper from "./components/HomeWrapper/HomeWrapper";
+import Education from "./components/Education/education";
+import SkillsList from "./components/Skills/SkillList";
+import ProjectList from "./components/Projects/projectList";
+import LoginPage from "./components/Admin/LoginPage";
+import "./App.css";
 
 function App() {
   return (
@@ -19,7 +20,6 @@ function App() {
       <div
         style={{
           background: "#050505",
-          fontFamily: "Montserrat, sans-serif",
           color: "#be9fe1",
         }}
       >
@@ -34,10 +34,10 @@ function App() {
         >
           <Link to="/">
             <NavbarBrand
-              className="mr-4 col-3"
+              className="mr-2 col-3 navbrand"
               style={{
                 fontWeight: 300,
-                fontSize: "40px",
+                fontSize: "1.75rem",
                 letterSpacing: "5px",
               }}
             >
@@ -49,7 +49,6 @@ function App() {
             <Nav className="col-md-12 justify-content-end">
               <Link to="/about">
                 <Button
-                  id="about"
                   className="mx-2"
                   variant="outline-light"
                   style={{ border: "0px" }}

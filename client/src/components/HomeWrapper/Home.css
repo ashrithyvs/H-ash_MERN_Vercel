@@ -1,0 +1,14 @@
+.write-btn {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 60px;
+  height: 60px;
+  border-radius: 2rem !important;
+  z-index: 1;
+}
+@media only screen and (min-width: 350.98px) and (max-width: 768px) {
+  .write-btn {
+    visibility: visible !important;
+  }
+}

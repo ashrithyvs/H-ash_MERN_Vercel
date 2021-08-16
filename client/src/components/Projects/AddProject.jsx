@@ -25,7 +25,7 @@ const AddProject = () => {
     formData.append("photo", newProject.photo);
 
     axios
-      .post("http://localhost:5000/projects/add/", formData)
+      .post("https://h-ash-server.herokuapp.com/projects/add/", formData)
       .then((res) => {
         console.log(res);
         console.log("Project Added to DB Successfully");

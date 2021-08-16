@@ -1,6 +1,6 @@
 import { Tabs, Tab } from "react-bootstrap";
-import AddProject from "./AddProject";
-import AddSkill from "./AddSkill";
+import AddProject from "../Projects/AddProject";
+import AddSkill from "../Skills/AddSkill";
 
 export default function Dashboard() {
   return (

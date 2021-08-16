@@ -16,7 +16,7 @@ const Profile = () => {
     const [adminInfo, setAdminInfo] = useState([]);
     useEffect(() => {
       axios
-        .get("http://localhost:5000/admin/getAdminInfo")
+        .get("https://h-ash-server.herokuapp.com/admin/getAdminInfo")
         .then((res) => {
           setAdminInfo(res.data);
           console.log("Info recieved");

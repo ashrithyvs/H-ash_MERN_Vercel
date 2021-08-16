@@ -1,0 +1,9 @@
+@media only screen and (max-width: 768px) {
+  .extras {
+    flex-direction: column;
+    justify-content: between;
+  }
+  .btn {
+    margin: 1rem auto;
+  }
+}

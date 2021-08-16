@@ -7,11 +7,11 @@ export default function ReadMore({ children }) {
     setIsReadMore(!isReadMore);
   };
   return (
-    <p className="text">
-      {isReadMore ? text.slice(0, 100) : text}
+    <span className="text">
+      {isReadMore ? text.slice(0, 90) : text}
       <span onClick={toggleReadMore} className="read-or-hide text-primary">
         {isReadMore ? "  ...read more" : " show less"}
       </span>
-    </p>
+    </span>
   );
 }

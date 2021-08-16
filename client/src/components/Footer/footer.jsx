@@ -1,7 +1,7 @@
-import { ReactComponent as Facebook } from "./images/facebook.svg";
-import { ReactComponent as Github } from "./images/github.svg";
-import { ReactComponent as Twitter } from "./images/twitter.svg";
-import { ReactComponent as Linkedin } from "./images/linkedin.svg";
+import { ReactComponent as Facebook } from "../images/facebook.svg";
+import { ReactComponent as Github } from "../images/github.svg";
+import { ReactComponent as Twitter } from "../images/twitter.svg";
+import { ReactComponent as Linkedin } from "../images/linkedin.svg";
 
 function Footer() {
   return (
@@ -17,7 +17,7 @@ function Footer() {
       >
         #h-ash
       </span>
-      <div className="container d-flex col-md-3 justify-content-between mt-2  ">
+      <div className="container d-flex col-md-5 col-sm-12 justify-content-between my-3  ">
         <a target="_blank" href="https://www.facebook.com" rel="noreferrer">
           <Facebook />
         </a>

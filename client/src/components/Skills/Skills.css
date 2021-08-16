@@ -1,0 +1,18 @@
+.skills-wrapper {
+  flex-wrap: wrap;
+}
+.skill {
+  width: 30%;
+}
+.skill-container {
+  padding: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills-wrapper {
+    flex-direction: column;
+  }
+  .skill {
+    width: 50%;
+  }
+}
